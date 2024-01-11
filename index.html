@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Чат - верстка</title>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-block">
+            <div class="top-buttons">
+                <button id="settings">Настройки</button>
+                <dialog class="popup">
+                    <div class="settings-block">
+                        <div class="settings-block-header">
+                            <p class="confirm-header">Настройки</p>
+                            <span class="close-popup"></span>
+                        </div>
+                        <div class="popup-block-container">
+                            <p class="popup-label-name">Имя в чате</p>
+                            <form class="input-message">
+                                <input class="popup-message" type="text" placeholder="Стив">
+                                <button class="submit-message">-></button>
+                            </form>
+                        </div>
+                    </div>
+                </dialog>
+                <button id="exit">Выйти</button>
+            </div>
+            <div class="messages-block">
+                <ul class="chat-list">
+                    <li class="chat-message-row my"><span class="chat-name">Я:</span><span class="chat-message">Добрый день!</span><span class="message-time">18:45</span></li>
+                    <li class="chat-message-row partner"><span class="chat-name">Собеседник:</span><span class="message">Добрый день!</span><span class="message-time">18:45</span></li>
+                    <li class="chat-message-row partner"><span class="chat-name">Собеседник:</span><span class="message">А это второе и, кажется, оно очень
+                        длинное, чтобы поместиться на
+                        одной строке</span><span class="message-time">18:45</span></li>
+                    <li class="chat-message-row unread my"><span class="chat-name">Я:</span><span class="message">Добрый день!</span><span class="message-time">18:45</span></li>
+                </ul>
+            </div>
+            <div class="input-block">
+                <form class="input-message">
+                    <input class="add-message" type="text" placeholder="сообщение...">
+                    <button class="submit-message">-></button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>

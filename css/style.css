@@ -7,9 +7,6 @@ body {
     max-width: 320px;
     margin: auto;
 }
-.chat-block {
-
-}
 .top-buttons {
     display: flex;
     justify-content: space-between;
@@ -72,7 +69,7 @@ body {
     margin: auto;
 }
 .settings-block {
-    width: 273px;
+    max-width: 320px;
     min-height: 319px;
     padding: 14px;
     position: relative;

@@ -27,6 +27,8 @@ body {
 .chat-list {
     display: flex;
     flex-direction: column;
+    max-height: 412px;
+    overflow-y: scroll;
 }
 .chat-message-row {
     width: fit-content;

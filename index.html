@@ -21,7 +21,7 @@
                         </div>
                         <div class="popup-block-container">
                             <p class="popup-label-name">Имя в чате</p>
-                            <form class="input-message">
+                            <form class="input-message-popup">
                                 <input class="popup-message" type="text" placeholder="Стив">
                                 <button class="submit-message">-></button>
                             </form>
@@ -33,22 +33,26 @@
             <div class="messages-block">
                 <ul class="chat-list">
                     <li class="chat-message-row my"><span class="chat-name">Я:</span><span class="chat-message">Добрый день!</span><span class="message-time">18:45</span></li>
-                    <li class="chat-message-row partner"><span class="chat-name">Собеседник:</span><span class="message">Добрый день!</span><span class="message-time">18:45</span></li>
-                    <li class="chat-message-row partner"><span class="chat-name">Собеседник:</span><span class="message">А это второе и, кажется, оно очень
+                    <li class="chat-message-row partner"><span class="chat-name">Собеседник:</span><span class="chat-message">Добрый день!</span><span class="message-time">18:45</span></li>
+                    <li class="chat-message-row partner"><span class="chat-name">Собеседник:</span><span class="chat-message">А это второе и, кажется, оно очень
                         длинное, чтобы поместиться на
                         одной строке</span><span class="message-time">18:45</span></li>
                     <li class="chat-message-row unread my"><span class="chat-name">Я:</span><span class="message">Добрый день!</span><span class="message-time">18:45</span></li>
+                    <template id="message">
+                        <li class="chat-message-row my"><span class="chat-name">Я:</span><span class="chat-message">Добрый день!</span><span class="message-time">18:45</span></li>
+                    </template>
                 </ul>
             </div>
             <div class="input-block">
                 <form class="input-message">
-                    <input class="add-message" type="text" placeholder="сообщение...">
-                    <button class="submit-message">-></button>
+                    <input name="add-message" class="add-message" type="text" required placeholder="сообщение...">
+                    <button type="submit" class="submit-message">-></button>
                 </form>
             </div>
 
         </div>
     </div>
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/addMessage.js"></script>
 </body>
 </html>
